@@ -2,7 +2,6 @@ import random
 import time
 import os
 import sys
-#os.execl(sys.executable, sys.executable, * sys.argv)
 
 input("Welcome to guess the number! press enter to start.")
 
@@ -11,7 +10,6 @@ print("How many tries do you want? (5 is standard.)")
 tries = int(input())
 
 number = random.randint(0, 10)
-#number = 5
 
 
 while tries > 0:
@@ -29,7 +27,7 @@ while tries > 0:
             if answer == "yes":
                 print("Okay")
                 time.sleep(1)
-                os.execl(sys.executable, sys.executable, * sys.argv)
+                os.execl(sys.executable, sys.executable, * sys.argv) #this makes the script restart.
             elif answer == "no":
                 print("Bye!")
                 time.sleep(1)
@@ -53,7 +51,7 @@ while answer not in ("yes", "no"):
     if answer == "yes":
         print("Okay")
         time.sleep(1)
-        os.execl(sys.executable, sys.executable, * sys.argv)
+        os.execl(sys.executable, sys.executable, * sys.argv) #this makes the script restart.
     elif answer == "no":
         print("Bye!")
         time.sleep(1)
