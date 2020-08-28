@@ -27,7 +27,8 @@ while tries > 0:
             if answer == "yes":
                 print("Okay")
                 time.sleep(1)
-                os.execl(sys.executable, sys.executable, * sys.argv) #this makes the script restart.
+                os.execl(sys.executable, sys.executable, * sys.argv)
+                time.sleep(1)
             elif answer == "no":
                 print("Bye!")
                 time.sleep(1)
@@ -36,7 +37,7 @@ while tries > 0:
                 print("Please type yes or no.")
     else:
         tries -= 1
-        if tries == 1:
+        if tries > 1:
             print("Wrong! you still have " +str(tries)+ " tries.")
         elif tries == 0:
             print("You lost!")
@@ -51,7 +52,8 @@ while answer not in ("yes", "no"):
     if answer == "yes":
         print("Okay")
         time.sleep(1)
-        os.execl(sys.executable, sys.executable, * sys.argv) #this makes the script restart.
+        os.execl(sys.executable, sys.executable, * sys.argv)
+        time.sleep(1)
     elif answer == "no":
         print("Bye!")
         time.sleep(1)
