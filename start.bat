@@ -1,1 +1,1 @@
-python3 game.py
+python game.py
